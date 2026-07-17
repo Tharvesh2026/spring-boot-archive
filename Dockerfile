@@ -2,12 +2,12 @@ FROM eclipse-temurin:21-jre
 
 LABEL maintainer="Tharvesh Muhaideen"
 LABEL org.opencontainers.image.title="IdentityCore"
-LABEL org.opencontainers.image.version="2.1"
+LABEL org.opencontainers.image.version="2.2"
 LABEL org.opencontainers.image.description="IdentityCore Spring Boot Application"
 
 WORKDIR /app
 
-COPY .spring-boot-archive/tharbytes/identityCore/2.1/identityCore-2.1.jar
+COPY ./tharbytes/identityCore/2.2/identityCore-2.2.jar app.jar
 
 EXPOSE 8080
 
